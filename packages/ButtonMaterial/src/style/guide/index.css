@@ -1,0 +1,18 @@
+:root {
+
+    /*Color Text*/
+    --primary: #F5F5F5;
+    --secondary: #212121;
+
+    /*Background*/
+    --primary-background: #4527a0;
+    --secundary-background:#ee6002;
+    --third-background:#eceff1;
+
+    /* Background Light*/
+    --primary-backgroundLight: #7953d2;
+    --primary-backgroundDark: #00007070;
+
+    /*Box Shadow*/
+    --light-shadow: #21212130
+}
