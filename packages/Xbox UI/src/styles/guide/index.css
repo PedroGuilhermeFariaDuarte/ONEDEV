@@ -1,0 +1,134 @@
+:root {
+    /* Background */
+    --primary-background: #201F1E;
+    --secondary-backgorubd: #323130;
+    --therd-background:#3B3A39;
+    --fourth-background: #605E5C;
+    --fifth-background: #EDEBE9;
+    --sixth-background: #F3F2F1;
+    --seventh-background: #FAF9F8;
+    --eighth-background: #FFFF;
+
+    /* Colors of Notification */
+    --warning-background: #797673;
+    --warning-icon-error: #d83b01;
+    --warning-icon-success: #107c10;
+
+    /* Colors of Status */
+    --status-away: #ffaa44;
+    --status-notDistub: #c50f1f;
+    --status-online: #6bb800;
+    --status-invisible: #8a8886;
+    --status-outOffice: #b4009e;
+
+    /* Combined Colors Theme */
+    --theme-pinkRed: linear-gradient(-45deg,#750b1c,#a4262c);
+    --theme-redOrange: linear-gradient(-45deg,#d13438,#da3b01);
+    --theme-orangeOrange: linear-gradient(-45deg,#8e562e,#ca5010);
+    --theme-orangeYellow: linear-gradient(-45deg,#ffaa44,#fce100);
+    --theme-orangeYellowYellow: linear-gradient(-45deg,#986f0b,#c19c00);
+    --theme-yellowGreen: linear-gradient(-45deg,#8cbd18,#0b6a0b);
+    --theme-greenCyan: linear-gradient(-45deg,#498205,#00ad56);
+    --theme-cyanCyan: linear-gradient(-45deg,#005b70,#038387);
+    --theme-cyanBlue: linear-gradient(-45deg,#00b7c3,#004e8c);
+    --theme-cyanBlueBlue: linear-gradient(-45deg,#0078d4,#4f6bed);
+    --theme-blueMagenta: linear-gradient(-45deg,#5c2e91,#8764b8);
+    --theme-blueMagentaMagenta: linear-gradient(-45deg,#8378de,#881798);
+    --theme-magenta: linear-gradient(-45deg,#c239b3,#9b0062);
+    --theme-magentaPink: linear-gradient(-45deg,#e3008c,#393939);
+    --theme-grayGray: linear-gradient(-45deg,#7a7574,#69797e);
+    --theme-gray: #a0aeb2;
+
+    /* Combined border colors Theme */
+    --border-pinkRed:#d13438;
+    --border-redOrange: #8e562e;
+    --border-orangeOrange: #ffaa44;
+    --border-orangeYellowYellow: #986f0b;
+    --border-yellowGreen: #498205;
+    --border-greenCyan: #00b7c3;
+    --border-cyanCyan:#8378de;
+    --border-cyanBlue:#5c2e91;
+    --border-magenta: #e3008c;
+    --border-blueMagenta:#8378de;
+    --border-blueMagentaMagenta:#c239b3;
+    --border-magentaPink: #7a7574;
+    --border-grayGray: #a0aeb2;
+    --border-gray:#393939;
+
+    /* Combined text colors Theme */
+    --text-pinkRed:#FAF9F8;
+    --text-redOrange: #FAF9F8;
+    --text-orangeOrange: #201F1E;
+    --text-orangeYellowYellow: #FAF9F8;
+    --text-yellowGreen: #201F1E;
+    --text-greenCyan: #FAF9F8;
+    --text-cyanCyan:#FAF9F8;
+    --text-cyanBlue:#FAF9F8;
+    --text-magenta: #FAF9F8;
+    --text-blueMagenta:#FAF9F8;
+    --text-blueMagentaMagenta:#FAF9F8;
+    --text-magentaPink: #FAF9F8;
+    --text-grayGray: #FAF9F8;
+    --text-gray:#201F1E;
+
+    /* Font */
+    --font-family: "Segoe UI Semibold","Roboto",sans-serif;
+    --font-description: "Segoe UI Light","Roboto",sans-serif;
+    --font-information: "Segoe UI","Roboto",sans-serif;
+    --font-warning: "Segoe UI Semibold","Roboto",sans-serif;
+
+    --font-size: 1.6em;
+    --title-size:1.3em;
+    --title-card-size:0.8em;
+    --description-size: 0.6em;
+    --information-size: 1.8em;
+    --warning-size: 1.9em;
+
+    --color-font: #FAF9F8;
+    --color-description: #201F1E;
+    --color-information: #201F1E;
+    --color-warning: #201F1E;
+
+    /* Box Shadows */
+    --shadow-4: 0 0 4px 4px #201F1E08;
+    --shadow-8: 0 0 8px 8px #201F1E08;
+    --shadow-16: 0 0 16px 16px #201F1E08;
+    --shadow-64: 0 0 64px 64px #201F1E08;
+
+    /* Spacing */
+    --padding-top:50px;
+    --padding-left:80px;
+    --padding-right:80px;
+    --padding-bottom:0px;
+
+    /* Card's */
+    --card-small-width: 320px;
+    --card-small-height: 479px;
+
+    --card-medium-width: 480px;
+    --card-medium-height: 639px;
+
+    --card-large-width: 640px;
+    --card-large-height: 1023px;
+
+    --card-extra-large-width: 1024px;
+    --card-extra-large-height: 1365px;
+
+    --card-extra-extra-large-width: 1366px;
+    --card-extra-extra-large-height: 1919px;
+
+    --card-extra-extra-extra-large-width: 1920px;
+    --card-extra-extra-extra-large-height: auto;
+
+    /* Container Focus Rounded */
+    --container-rounded-focus-width:auto;
+    --container-rounded-focus-height:auto;
+    --container-rounded-focus-border-radius:50%;
+    --container-rounded-focus-padding:2px;
+
+    /* Container Focus Rounded Edges */
+    --container-focus-width:auto;
+    --container-focus-height:auto;
+    --container-focus-border-radius:15px;
+    --container-focus-padding:3px;
+}

@@ -1,0 +1,99 @@
+*,*::before,*::after {
+    padding:0px;
+    margin:0px;
+    border:none;
+    outline:none;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    height: 100vh;
+    font-family: var(--font-family);
+    font-size:var(--font-size);
+    color:var(--color-font);
+    background-color:var(--primary-background);
+    padding:var(--padding-top) 0px  var(--padding-bottom) var(--padding-left);
+}
+
+.container_rounded_focus {
+    width: var(--container-rounded-focus-width);
+    height:var(--container-rounded-focus-height);
+    border-radius:var(--container-rounded-focus-border-radius);
+    padding:var(--container-rounded-focus-padding);
+    transition: box-shadow 400ms;
+    box-shadow: 0 0 0.2em 0.2em var(--border-cyanCyan);
+    animation: rounded_focus 40000ms infinite;
+
+    display:flex;
+    flex-flow:center;
+    justify-content: center;
+    align-items:center;
+}
+
+.container_focus {
+    width: var(--container-focus-width);
+    height:var(--container-focus-height);
+    border-radius:var(--container-focus-border-radius);
+    padding:var(--container-focus-padding);
+    border:1px solid pink;
+
+
+    display:flex;
+    flex-flow:center;
+    justify-content: center;
+    align-items:center;
+}
+
+@keyframes rounded_focus {
+    0% {
+        box-shadow: 0 0 0.2em 0.2em var(--border-cyanCyan);
+    }
+
+    5% {
+        box-shadow: 0 0 0.3em 0.2em var(--border-cyanCyan);
+    }
+
+    10% {
+        box-shadow: 0 0 0.2em 0.3em var(--border-cyanBlue);
+    }
+
+    20% {
+        box-shadow: 0 0 0.3em 0.3em var(--border-cyanBlue);
+    }
+
+    30% {
+        box-shadow: 0 0 0.3em 0.2em var(--border-cyanBlue);
+    }
+
+    40% {
+        box-shadow: 0 0 0.2em 0.3em var(--border-cyanCyan);
+    }
+
+    50% {
+        box-shadow: 0 0 0.3em 0.2em var(--border-cyanCyan);
+    }
+
+    60% {
+        box-shadow: 0 0 0.2em 0.3em var(--border-cyanBlue);
+    }
+
+    70% {
+        box-shadow: 0 0 0.3em 0.2em var(--border-cyanBlue);
+    }
+
+    80% {
+        box-shadow: 0 0 0.2em 0.3em var(--border-cyanCyan);
+    }
+
+    90% {
+        box-shadow: 0 0 0.3em 0.2em var(--border-cyanCyan);
+    }
+
+    100% {
+        box-shadow: 0 0 0.2em 0.2em var(--border-cyanCyan);
+    }
+}
