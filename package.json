@@ -1,0 +1,20 @@
+{
+    "name": "onedev",
+    "version": "1.0.0",
+    "main": "index.js",
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "packages/*",
+            "packages/shared/*"
+        ]
+    },
+    "repository": "https://github.com/PedroGuilhermeFariaDuarte/ONEDEV.git",
+    "author": "PedroGuilherme <pedro_races@hotmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@monorepo/eslint-config": "*",
+        "eslint-plugin-prettier": "^3.1.4",
+        "typescript": "^4.0.3"
+    }
+}
