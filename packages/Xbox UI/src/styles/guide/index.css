@@ -78,6 +78,7 @@
     --font-warning: "Segoe UI Semibold","Roboto",sans-serif;
 
     --font-size: 1.6em;
+    --general-size: 0.9em;
     --title-size:1.3em;
     --title-card-size:0.8em;
     --description-size: 0.6em;
@@ -96,7 +97,7 @@
     --shadow-64: 0 0 64px 64px #201F1E08;
 
     /* Spacing */
-    --padding-top:50px;
+    --padding-top:30px;
     --padding-left:80px;
     --padding-right:80px;
     --padding-bottom:0px;

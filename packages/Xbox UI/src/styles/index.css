@@ -48,6 +48,23 @@ body {
     align-items:center;
 }
 
+span.gamescore:after{
+    width: 15px;
+    height: 15px;
+    content:"G";
+    border-radius: 7.5px;
+    background-color: var(--fifth-background);
+    font-size: 8px;
+    font-weight: bold;
+    color: var(--fourth-background);
+    margin-right:5px;
+
+    display:flex;
+    flex-flow:row;
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes rounded_focus {
     0% {
         box-shadow: 0 0 0.2em 0.2em var(--border-cyanCyan);
