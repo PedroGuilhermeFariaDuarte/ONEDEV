@@ -1,6 +1,12 @@
+body {
+    padding-left:0px;
+    padding-right:0px;
+}
+
 header {
     width:100%;
     height: auto;
+    background: none;
 }
 
 header h1 {
@@ -11,23 +17,33 @@ header h1 {
 #container {
     width:100%;
     height: auto;
-    margin:auto;
     margin-top:75px;
-    padding-left:150px;
-    overflow-x: auto;
+    overflow: hidden;
+    /* border:1px solid red; */
+
 
     display:flex;
     flex-flow:row;
-    align-items: center;
+}
+
+.container_group {
+    width:100%;
+    height:auto;
+}
+
+#container_profiles {
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
 }
 
 .button_add {
-    width: 160px;
-    height: 160px;
-    border-radius:80px;
+    width: 200px;
+    height: 200px;
+    border-radius:100px;
     background-color: var(--fourth-background);
     color:var(--seventh-background);
     font-size:var(--font-size);
+    font-weight:lighter;
     cursor:pointer;
 
     display:flex;
@@ -39,8 +55,9 @@ header h1 {
 .card_large {
     width: var(--card-small-width);
     height: var(--card-small-height);
-    cursor:pointer;
+    cursor:default;
     padding:20px;
+    /* border:1px solid blue; */
 
     display:flex;
     flex-flow:column;
@@ -59,16 +76,12 @@ header h1 {
 }
 
 .image_avatar {
-    width: 160px;
-    height: 160px;
-    border-radius:80px;
-    /* background-color:red; */
-}
-
-.focus_avatar {
-    width:210px;
-    height:210px;
-    border-radius:110px;
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    padding:3px;
+    transition:all 400ms;
+    background:none;
 }
 
 .informations_avatar {
@@ -100,19 +113,8 @@ span.info {
 
 }
 
-span.icon:after{
-    width: 15px;
-    height: 15px;
-    content:"G";
-    border-radius: 7.5px;
-    background-color: var(--fifth-background);
-    font-size: 8px;
-    font-weight: bold;
-    color: var(--fourth-background);
-    margin-right:5px;
-
-    display:flex;
-    flex-flow:row;
-    justify-content: center;
-    align-items: center;
+@keyframes imageLoader {
+    to{
+        background-color: var(--sixth-background);
+    }
 }
