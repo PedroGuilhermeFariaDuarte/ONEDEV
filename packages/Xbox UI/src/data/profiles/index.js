@@ -28,9 +28,9 @@ const profilesData = [
         config: {
             system: {
                 theme: {
-                    name: "--theme-greenCyan",
-                    className: "greenCyan",
-                    colorText: "--text-greenCyan"
+                    name: "--theme-redOrange",
+                    className: "redOrange",
+                    colorText: "--text-redOrange"
                 }
             }
         }
@@ -64,8 +64,8 @@ const profilesData = [
         config: {
             system: {
                 theme: {
-                    name: "--theme-blueMagenta",
-                    className: "blueMagenta"
+                    name: "--theme-yellowGreen",
+                    className: "yellowGreen"
                 }
             }
         }
