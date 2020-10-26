@@ -1,7 +1,4 @@
 .pinkRed {
-    width:230px;
-    height:230px;
-    transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em var(--border-pinkRed);
     animation: pinkRed 40000ms infinite;
 }

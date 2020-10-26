@@ -22,21 +22,21 @@
     --status-outOffice: #b4009e;
 
     /* Combined Colors Theme */
-    --theme-pinkRed: linear-gradient(-45deg,#750b1c,#a4262c);
-    --theme-redOrange: linear-gradient(-45deg,#d13438,#da3b01);
-    --theme-orangeOrange: linear-gradient(-45deg,#8e562e,#ca5010);
-    --theme-orangeYellow: linear-gradient(-45deg,#ffaa44,#fce100);
-    --theme-orangeYellowYellow: linear-gradient(-45deg,#986f0b,#c19c00);
-    --theme-yellowGreen: linear-gradient(-45deg,#8cbd18,#0b6a0b);
-    --theme-greenCyan: linear-gradient(-45deg,#498205,#00ad56);
-    --theme-cyanCyan: linear-gradient(-45deg,#005b70,#038387);
-    --theme-cyanBlue: linear-gradient(-45deg,#00b7c3,#004e8c);
-    --theme-cyanBlueBlue: linear-gradient(-45deg,#0078d4,#4f6bed);
-    --theme-blueMagenta: linear-gradient(-45deg,#5c2e91,#8764b8);
-    --theme-blueMagentaMagenta: linear-gradient(-45deg,#8378de,#881798);
-    --theme-magenta: linear-gradient(-45deg,#c239b3,#9b0062);
-    --theme-magentaPink: linear-gradient(-45deg,#e3008c,#393939);
-    --theme-grayGray: linear-gradient(-45deg,#7a7574,#69797e);
+    --theme-pinkRed: linear-gradient(135deg,#201F1E,#201F1E,#750b1c,#a4262c,#201F1E,#201F1E);
+    --theme-redOrange: linear-gradient(135deg,#201F1E,#201F1E,#d13438,#da3b01,#201F1E,#201F1E);
+    --theme-orangeOrange: linear-gradient(135deg,#201F1E,#201F1E,#8e562e,#ca5010,#201F1E,#201F1E);
+    --theme-orangeYellow: linear-gradient(135deg,#201F1E,#201F1E,#ffaa44,#fce100,#201F1E,#201F1E);
+    --theme-orangeYellowYellow: linear-gradient(135deg,#201F1E,#201F1E,#986f0b,#c19c00,#201F1E,#201F1E);
+    --theme-yellowGreen: linear-gradient(135deg,#201F1E,#201F1E,#8cbd18,#0b6a0b,#201F1E,#201F1E);
+    --theme-greenCyan: linear-gradient(135deg, #201F1E,#201F1E, #498205,#00ad56,#201F1E, #201F1E);
+    --theme-cyanCyan: linear-gradient(135deg,#201F1E,#201F1E,#005b70,#038387,#201F1E,#201F1E);
+    --theme-cyanBlue: linear-gradient(135deg,#201F1E,#201F1E,#00b7c3,#004e8c,#201F1E,#201F1E);
+    --theme-cyanBlueBlue: linear-gradient(135deg,#201F1E,#201F1E,#0078d4,#4f6bed,#201F1E,#201F1E);
+    --theme-blueMagenta: linear-gradient(135deg,#201F1E,#201F1E,#5c2e91,#8764b8,#201F1E,#201F1E);
+    --theme-blueMagentaMagenta: linear-gradient(135deg,#201F1E,#201F1E,#8378de,#881798,#201F1E,#201F1E);
+    --theme-magenta: linear-gradient(135deg,#201F1E,#201F1E,#c239b3,#9b0062,#201F1E,#201F1E);
+    --theme-magentaPink: linear-gradient(135deg,#201F1E,#201F1E,#e3008c,#393939,#201F1E,#201F1E);
+    --theme-grayGray: linear-gradient(135deg,#201F1E,#201F1E,#7a7574,#69797e,#201F1E,#201F1E);
     --theme-gray: #a0aeb2;
 
     /* Combined border colors Theme */
