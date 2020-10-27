@@ -103,6 +103,12 @@
     --padding-bottom:0px;
 
     /* Card's */
+    --card-very-very-small-width: 95px;
+    --card-very-very-small-height: 90px;
+
+    --card-very-small-width: 190px;
+    --card-very-small-height: 180px;
+
     --card-small-width: 320px;
     --card-small-height: 479px;
 
@@ -130,6 +136,7 @@
     /* Container Focus Rounded Edges */
     --container-focus-width:auto;
     --container-focus-height:auto;
-    --container-focus-border-radius:15px;
+    --container-focus-small-border-radius:3px;
+    --container-focus-border-radius:5px;
     --container-focus-padding:3px;
 }

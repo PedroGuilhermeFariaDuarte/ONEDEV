@@ -79,6 +79,7 @@ header h1 {
     width:200px;
     height:200px;
     border-radius: 50%;
+    /* transform: scale(1); */
     padding:3px;
     transition:all 400ms;
     background:none;

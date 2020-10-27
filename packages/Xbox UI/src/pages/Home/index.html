@@ -2,14 +2,31 @@
 <html lang="pt-BR">
 
 <head>
-    <title>Login</title>
+    <title>Home</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../styles/theme/index.css" />
     <link rel="stylesheet" href="../../styles/guide/index.css" />
     <link rel="stylesheet" href="../../styles/index.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../../styles/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <script src="../../javascript/handler/theme/index.js"></script>
+    <script src="../../javascript/home/index.js"></script>
     <script>
+        const profileData = JSON.parse(sessionStorage.getItem("profile"))
+        const theme = profileData.config?.system?.theme
+
+        function handlerSetCardTheme(event, oldState) {
+            const card = event.currentTarget
+            console.log(card.getAttribute("id"))
+            setThemeElement(`#${card.getAttribute("id")}`, theme, false, { attribute: "class", value: "card" })
+        }
+
         window.onload = function (event) {
-            //
+            const body = document.querySelector("body")
+
+            handlerSetTheme(body, false, theme)
+            setDataProfileInPage(profileData)
+            getHistoryGames(profileData)
         }
     </script>
 </head>
@@ -26,19 +43,30 @@
                 <div class="profile_group">
                     <div class="profile_info">
                         <div id="profile_status">
-                            ONEDEV
+                            <span id="profile_name">
+
+                            </span>
                             <span id="profile_account">
-                                ultimate
                             </span>
                         </div>
                         <div id="container_gamescore">
                             <span class="gamescore"></span>
-                            940
+                            <span class="gamescore_text"></span>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="status_system">
+                <i class="fa fa-microphone-slash fa-lg"></i>
+                <i class="fa fa-battery-full fa-lg"></i>
+                <span>19:51 PM</span>
+            </div>
         </header>
+        <section>
+            <div class="list_card">
+                <!--All cards-->
+            </div>
+        </section>
     </div>
 </body>
 
