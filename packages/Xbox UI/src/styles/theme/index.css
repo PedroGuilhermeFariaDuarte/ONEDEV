@@ -1,6 +1,7 @@
 .pinkRed {
     box-shadow: 0 0 0.2em 0.2em var(--border-pinkRed);
     animation: pinkRed 40000ms infinite;
+
 }
 
 @keyframes pinkRed {
@@ -59,6 +60,7 @@
     transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em var(--border-redOrange);
     animation: redOrange 40000ms infinite;
+
 }
 
 @keyframes redOrange {
@@ -117,6 +119,7 @@
     transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em var(--border-orangeOrange);
     animation: orangeOrange 40000ms infinite;
+
 }
 
 @keyframes orangeOrange {
@@ -175,6 +178,7 @@
     transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em var(--border-orangeYellowYellow);
     animation: orangeYellowYellow 40000ms infinite;
+
 }
 
 @keyframes orangeYellowYellow {
@@ -233,6 +237,7 @@
     transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em var(--border-yellowGreen);
     animation: _yellowGreen 40000ms infinite;
+
 }
 
 @keyframes _yellowGreen {
@@ -291,6 +296,7 @@
     transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em var(--border-greenCyan);
     animation: greenCyan 40000ms infinite;
+
 }
 
 @keyframes greenCyan {
@@ -349,6 +355,7 @@
     transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em var(--border-cyanCyan);
     animation: cyanCyan 40000ms infinite;
+
 }
 
 @keyframes cyanCyan {
@@ -407,6 +414,7 @@
     transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em var(--border-cyanBlue);
     animation: cyanBlue 40000ms infinite;
+
 }
 
 @keyframes cyanBlue {
@@ -465,6 +473,7 @@
     transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em var(--border-cyanBlueBlue);
     animation: cyanBlueBlue 40000ms infinite;
+
 }
 
 @keyframes cyanBlueBlue {
@@ -523,6 +532,7 @@
     transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em var(--border-blueMagenta);
     animation: blueMagenta 40000ms infinite;
+
 }
 
 @keyframes blueMagenta {
@@ -581,6 +591,7 @@
     transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em var(--border-blueMagentaMagenta);
     animation: blueMagentaMagenta 40000ms infinite;
+
 }
 
 @keyframes blueMagentaMagenta {
@@ -639,6 +650,7 @@
     transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em var(--border-blueMagentaMagenta);
     animation: blueMagentaMagenta 40000ms infinite;
+
 }
 
 @keyframes blueMagentaMagenta {
@@ -697,6 +709,7 @@
     transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em var(--border-magenta);
     animation: _magenta 40000ms infinite;
+
 }
 
 @keyframes _magenta {
@@ -813,6 +826,7 @@
     transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em var(--border-grayGray);
     animation: grayGray 40000ms infinite;
+
 }
 
 @keyframes grayGray {
@@ -871,6 +885,7 @@
     transition: box-shadow 400ms;
     box-shadow: 0 0 0.2em 0.2em vasr(--border-gray);
     animation: _gray 40000ms infinite;
+    /*  */
 }
 
 @keyframes _gray {
