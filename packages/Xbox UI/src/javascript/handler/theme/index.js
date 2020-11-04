@@ -11,16 +11,30 @@ function setThemeElement(elementName, theme, scale = false, oldState) {
 
     if (handlerRemoveThemeElement(elementName, scale, oldState)) {
         target.classList.add(`${theme?.className}`)
+        target.setAttribute("style", "")
         if (scale) target.style.transform = "scale(1.2)";
     }
 }
 
-function handlerRemoveThemeElement(_elementName, scale = false, oldState = false) {
+function handlerRemoveThemeElement(elementName, scale = false, oldState = false) {
 
-    document.querySelectorAll('.image_avatar, .card').forEach(target => {
+    document.querySelectorAll('.image_avatar, .card, .card_very_small, span, button').forEach(target => {
+        const idTarget = `#${target.getAttribute("id")}`
+
         if (scale) target.style.transform = "scale(1)";
-        target.setAttribute(oldState.attribute, oldState.value)
+
+        if (idTarget !== elementName) {
+            target.style.boxShadow = "none"
+            target.style.animation = "none"
+        }
     })
 
     return true;
+}
+
+function handlerSetThemeDetails(event) {
+    const profileData = JSON.parse(sessionStorage.getItem("profile"))
+    const theme = profileData.config?.system?.theme
+    const card = event.currentTarget
+    setThemeElement(`#${card.getAttribute("id")}`, theme, false, { attribute: "class", value: "card_very_small" })
 }

@@ -8,44 +8,30 @@
     <link rel="stylesheet" href="src/styles/index.css" />
     <link rel="stylesheet" href="src/styles/theme/index.css" />
     <link rel="stylesheet" href="src/css/login.css" />
+    <link rel="stylesheet" href="src/styles/font-awesome-4.7.0/css/font-awesome.min.css" />
     <script src="src/data/profiles/index.js"></script>
     <script src="src/javascript/handler/theme/index.js"></script>
     <script src="src/javascript/login/index.js"></script>
+    <script src="src/javascript/handler/debounce/index.js"></script>
+    <script src="src/javascript/handler/BoxMessage/index.js"></script>
     <script>
         window.onload = function (event) {
-            handlerLoadProfiles(profilesData)
+            Promise.all([handlerLoadProfiles(profilesData)], handlerShowOthersOptions())
+                .then(() => { })
+                .catch(error => console.log(error.message))
+
         }
     </script>
 </head>
 
 <body>
+
     <header>
         <h1>Who's playing today?</h1>
     </header>
     <div id="container">
         <div class="container_group" id="container_profiles">
-            <div class="card_large">
-                <div class="group_content">
-                    <button type="button" class="button_add">+</button>
-                </div>
 
-                <div class="group_content">
-                    <div class="informations_avatar">
-                        <span class="strong">Add New</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card_large">
-                <div class="group_content">
-                    <button type="button" class="button_add">X</button>
-                </div>
-
-                <div class="group_content">
-                    <div class="informations_avatar">
-                        <span class="strong">Ignore session start</span>
-                    </div>
-                </div>
-            </div>
             <!-- All profiles -->
         </div>
     </div>

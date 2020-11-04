@@ -6,7 +6,6 @@ body {
 header {
     width:100%;
     height: auto;
-    background: none;
 }
 
 header h1 {
@@ -16,10 +15,11 @@ header h1 {
 
 #container {
     width:100%;
-    height: auto;
+    height: 100%;
     margin-top:75px;
     overflow: hidden;
     /* border:1px solid red; */
+    overflow-y: hidden;
 
 
     display:flex;
@@ -50,6 +50,11 @@ header h1 {
     flex-flow:row;
     justify-content: center;
     align-items: center;
+}
+
+.button_add .fa-lg {
+    font-size:0.8em;
+    margin-left:5px;
 }
 
 .card_large {

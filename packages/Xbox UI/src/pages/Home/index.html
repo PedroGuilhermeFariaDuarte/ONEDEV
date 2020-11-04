@@ -11,14 +11,21 @@
     <link rel="stylesheet" href="../../styles/font-awesome-4.7.0/css/font-awesome.min.css" />
     <script src="../../javascript/handler/theme/index.js"></script>
     <script src="../../javascript/home/index.js"></script>
+    <script src="../../javascript/handler/debounce/index.js"></script>
     <script>
         const profileData = JSON.parse(sessionStorage.getItem("profile"))
         const theme = profileData.config?.system?.theme
 
-        function handlerSetCardTheme(event, oldState) {
-            const card = event.currentTarget
-            console.log(card.getAttribute("id"))
-            setThemeElement(`#${card.getAttribute("id")}`, theme, false, { attribute: "class", value: "card" })
+        function handlerShowSectionContent(elementID) {
+
+            if (handlerOffSectionContent(elementID)) document.querySelector(`#${elementID}`).style.display = "flex"
+        }
+
+        function handlerOffSectionContent(elementID) {
+            document.querySelectorAll(".list_container").forEach(item => {
+                if (item.getAttribute("id") !== elementID) item.style.display = "none"
+            })
+            return true;
         }
 
         window.onload = function (event) {
@@ -66,6 +73,210 @@
             <div class="list_card">
                 <!--All cards-->
             </div>
+            <div class="list_card">
+                <div class="card card_others" id="other1" onmouseover="debounce(handlerSetThemeDetails,event)">
+                    <div class="card_others_content">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <div class="card_others_footer">
+                        <span class="information_card">My games & apps</span>
+                    </div>
+                </div>
+                <div class="card card_others" id="other2" onmouseover="debounce(handlerSetThemeDetails,event)">
+                    <div class="card_others_content"
+                        style="background-image:url('https://giantbomb1.cbsistatic.com/uploads/screen_kubrick/0/1992/3027372-screen%20shot%202018-06-10%20at%204.30.08%20pm.png')">
+                    </div>
+                    <div class="card_others_footer">
+                        <span class="title_card">2 friends playing</span>
+                        <span class="description_card">Ori and the Will the Wisps</span>
+                    </div>
+                </div>
+                <div class="card card_others" id="other3" onmouseover="debounce(handlerSetThemeDetails,event)">
+                    <div class="card_others_content"
+                        style="background-image:url('https://www.comunidadxbox.com/wp-content/uploads/Xbox-Game-Pass-Gears-5-Ultimate-Comunidad-Xbox.png')">
+                    </div>
+                    <div class="card_others_footer">
+                        <span class="description_card">Play Gears 5 now</span>
+                    </div>
+                </div>
+                <div class="card card_others" id="other4" onmouseover="debounce(handlerSetThemeDetails,event)">
+                    <div class="card_others_content"
+                        style="background-image:url('https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2XHiC?ver=ac71&q=90&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=199&s=2120&d=795&aim=true')">
+                    </div>
+                    <div class="card_others_footer">
+                        <span class="description_card">Elite Series 2 Controller</span>
+                    </div>
+                </div>
+                <div class="card card_others" id="other5" onmouseover="debounce(handlerSetThemeDetails,event)">
+                    <div class="card_others_content"
+                        style="background-image:url('https://media.distractify.com/brand-img/iPiabtKQq/0x0/twitch-logo-1569611682121.jpg')">
+                    </div>
+                    <div class="card_others_footer">
+                        <span class="title_card">6 friends living</span>
+                        <span class="description_card">Start your live in Twitch</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <ul class="list_sections">
+                <li onclick="handlerShowSectionContent('liSection0')">Store</li>
+
+                <div class="list_container" id="liSection0">
+                    <div class="card element_focus" id="section0" onmouseover="debounce(handlerSetThemeDetails,event)">
+                        <div class="card_content"
+                            style="background-image:url('https://2.bp.blogspot.com/-tyqXeNSLyDM/WDRFRQ8-38I/AAAAAAAAAbo/juuda6rgh3Eh4pAjACIx-_DcCWBU-FrDACLcB/s1600/Screenshot%2B%252813%2529.png')">
+                        </div>
+                    </div>
+                    <div class="list_content_item">
+                        <div class="list_content_item_group list_content_item_group_special">
+                            <div class="card card_medium" id="medium1"
+                                onmouseover="debounce(handlerSetThemeDetails,event)">
+                                <div class="card_others_content"
+                                    style="background-image:url('https://giantbomb1.cbsistatic.com/uploads/screen_kubrick/0/1992/3027372-screen%20shot%202018-06-10%20at%204.30.08%20pm.png')">
+                                </div>
+                                <div class="card_others_footer">
+                                    <span class="title_card">Ori and the Will the Wisps</span>
+                                    <span class="description_card">Get your copy now!</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_content_item_group">
+                            <div class="card card_medium" id="medium2"
+                                onmouseover="debounce(handlerSetThemeDetails,event)">
+                                <div class="card_others_content"
+                                    style="background-image:url('https://cdn.wccftech.com/wp-content/uploads/2020/08/black_ops_cold_war_artHD-2060x1159.jpg')">
+                                </div>
+                                <div class="card_others_footer">
+                                    <span class="title_card">COD: Black Ops Cold War</span>
+                                    <span class="description_card">Get your copy now!</span>
+                                </div>
+                            </div>
+                            <div class="card card_medium" id="medium3"
+                                onmouseover="debounce(handlerSetThemeDetails,event)">
+                                <div class="card_others_content"
+                                    style="background-image:url('https://twinfinite.net/wp-content/uploads/2020/07/Watch-Dogs-Legion.jpg')">
+                                </div>
+                                <div class="card_others_footer">
+                                    <span class="title_card">WatchDogs Legion</span>
+                                    <span class="description_card">Get your copy now!</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category_container">
+                            <span id="span0" onmouseover="debounce(handlerSetThemeDetails,event)">
+                                <i class="fa fa-gamepad fa-lg" aria-hidden="true"></i>
+                                News games
+                            </span>
+                            <span id="span1" onmouseover="debounce(handlerSetThemeDetails,event)">
+                                <i class="fa fa-line-chart fa-lg" aria-hidden="true"></i>
+                                Paid popular games
+                            </span>
+                            <span id="span2" onmouseover="debounce(handlerSetThemeDetails,event)">
+                                <i class="fa fa-volume-off fa-lg" aria-hidden="true"></i>
+                                Offers
+                            </span>
+
+                            <span id="span3" onmouseover="debounce(handlerSetThemeDetails,event)">
+                                <i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
+                                More games coming soon
+                            </span>
+                            <span id="span4" onmouseover="debounce(handlerSetThemeDetails,event)">
+                                <i class="fa fa-line-chart fa-lg" aria-hidden="true"></i>
+                                Free popular games
+                            </span>
+                            <span id="span5" onmouseover="debounce(handlerSetThemeDetails,event)">
+                                <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+                                Search
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <li onclick="handlerShowSectionContent('liSection1')">Game Pass</li>
+
+                <div class="list_container" id="liSection1">
+                    <div class="card element_focus" id="section1" onmouseover="debounce(handlerSetCardSmall,event)">
+                        <div class="card_content" style="background-image:url('${item?.small_background}')">
+                        </div>
+                    </div>
+                    <div class="list_content_item">
+                        <div class="list_content_item_group list_content_item_group_special">
+                            <div class="card card_medium" id="medium4"
+                                onmouseover="debounce(handlerSetThemeDetails,event)"></div>
+                        </div>
+                        <div class="list_content_item_group">
+                            <div class="card card_medium" id="medium5"
+                                onmouseover="debounce(handlerSetThemeDetails,event)"></div>
+                            <div class="card card_medium" id="medium6"
+                                onmouseover="debounce(handlerSetThemeDetails,event)"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <li onclick="handlerShowSectionContent('liSection2')">Community</li>
+
+                <div class="list_container" id="liSection2">
+                    <div class="card element_focus" id="section2" onmouseover="debounce(handlerSetCardSmall,event)">
+                        <div class="card_content" style="background-image:url('${item?.small_background}')">
+                        </div>
+                    </div>
+                    <div class="list_content_item">
+                        <div class="list_content_item_group list_content_item_group_special">
+                            <div class="card card_medium" id="medium7"
+                                onmouseover="debounce(handlerSetThemeDetails,event)"></div>
+                        </div>
+                        <div class="list_content_item_group">
+                            <div class="card card_medium" id="medium8"
+                                onmouseover="debounce(handlerSetThemeDetails,event)"></div>
+                            <div class="card card_medium" id="medium9"
+                                onmouseover="debounce(handlerSetThemeDetails,event)"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <li onclick="handlerShowSectionContent('liSection3')">Events</li>
+
+                <div class="list_container" id="liSection3">
+                    <div class="card element_focus" id="section3" onmouseover="debounce(handlerSetCardSmall,event)">
+                        <div class="card_content" style="background-image:url('${item?.small_background}')">
+                        </div>
+                    </div>
+                    <div class="list_content_item">
+                        <div class="list_content_item_group list_content_item_group_special">
+                            <div class="card card_medium" id="medium10"
+                                onmouseover="debounce(handlerSetThemeDetails,event)"></div>
+                        </div>
+                        <div class="list_content_item_group">
+                            <div class="card card_medium" id="medium11"
+                                onmouseover="debounce(handlerSetThemeDetails,event)"></div>
+                            <div class="card card_medium" id="medium12"
+                                onmouseover="debounce(handlerSetThemeDetails,event)"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <li onclick="handlerShowSectionContent('liSection4')">Store</li>
+
+                <div class="list_container" id="liSection4">
+                    <div class="card element_focus" id="section4" onmouseover="debounce(handlerSetCardSmall,event)">
+                        <div class="card_content" style="background-image:url('${item?.small_background}')">
+                        </div>
+                    </div>
+                    <div class="list_content_item">
+                        <div class="list_content_item_group list_content_item_group_special">
+                            <div class="card card_medium" id="medium13"
+                                onmouseover="debounce(handlerSetThemeDetails,event)"></div>
+                        </div>
+                        <div class="list_content_item_group">
+                            <div class="card card_medium" id="medium14"
+                                onmouseover="debounce(handlerSetThemeDetails,event)"></div>
+                            <div class="card card_medium" id="medium15"
+                                onmouseover="debounce(handlerSetThemeDetails,event)"></div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
         </section>
     </div>
 </body>
