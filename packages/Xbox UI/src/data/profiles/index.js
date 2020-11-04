@@ -9,7 +9,8 @@ const profilesData = [
             first_name: "Pedro",
             last_name: "Guilherme",
             full_name: "Pedro Guilherme",
-            email: "pedro@teste.com.br"
+            email: "pedro@teste.com.br",
+            password: "123xbox"
         },
         type_account: "ultimate",
         history: {
@@ -33,9 +34,9 @@ const profilesData = [
         config: {
             system: {
                 theme: {
-                    name: "--theme-redOrange",
-                    className: "redOrange",
-                    colorText: "--text-redOrange"
+                    name: "--theme-cyanBlue",
+                    className: "cyanBlue",
+                    colorText: "--text-cyanBlue"
                 }
             }
         }
@@ -50,7 +51,8 @@ const profilesData = [
             first_name: "Katarina",
             last_name: "Silva",
             full_name: "Katarina Silva",
-            email: "katarina@teste.com.br"
+            email: "katarina@teste.com.br",
+            password: "12345xbox"
         },
         type_account: "gold",
         history: {
@@ -94,53 +96,8 @@ const profilesData = [
         config: {
             system: {
                 theme: {
-                    name: "--theme-yellowGreen",
-                    className: "yellowGreen"
-                }
-            }
-        }
-    },
-    {
-        profile: {
-            avatar_url: "https://static.boredpanda.com/blog/wp-content/uploads/2016/09/cute-animal-illustration-sydney-hanson-4-57dbe305629ea__700.jpg",
-            gamertag: "OtherUser",
-            gamescore: 8320
-        },
-        user: {
-            first_name: "Katarina",
-            last_name: "Silva",
-            full_name: "Katarina Silva",
-            email: "katarina@teste.com.br"
-        },
-        type_account: "gold",
-        history: {
-            last_game: {
-                name_game: "Watchdogs",
-                background: "https://twinfinite.net/wp-content/uploads/2020/07/Watch-Dogs-Legion.jpg"
-            },
-            lastest_games: [
-                {
-                    name_game: "CyberPunk 2020",
-                    small_background: "https://www.gamewallpapers.com/members/getphonewallpaper.php?titel=Cyberpunk+2077&nummer=18&phoneResId=3502&wallpaperType=vertical&qhdbeschikbaar=1&wallpaper_id=6908",
-                    large_background: ""
-                },
-                {
-                    name_game: "Assassin's creed",
-                    small_background: "https://th.bing.com/th/id/OIP.Ap3IfkyDMAc8HYzxxj-zfgHaLH?pid=Api&rs=1",
-                    large_background: ""
-                },
-                {
-                    name_game: "Call of Duty Black Ops Cold War",
-                    small_background: "https://cdn.wccftech.com/wp-content/uploads/2020/08/black_ops_cold_war_artHD-2060x1159.jpg",
-                    large_background: ""
-                }
-            ]
-        },
-        config: {
-            system: {
-                theme: {
-                    name: "--theme-grayGray",
-                    className: "grayGray"
+                    name: "--theme-blueMagentaMagenta",
+                    className: "blueMagentaMagenta"
                 }
             }
         }

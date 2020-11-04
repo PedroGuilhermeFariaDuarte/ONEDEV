@@ -3,7 +3,7 @@
     --primary-background: #201F1E;
     --secondary-backgorubd: #323130;
     --therd-background:#3B3A39;
-    --fourth-background: #605E5C;
+    --fourth-background: #605E5C90;
     --fifth-background: #EDEBE9;
     --sixth-background: #F3F2F1;
     --seventh-background: #FAF9F8;
@@ -47,7 +47,7 @@
     --border-yellowGreen: #498205;
     --border-greenCyan: #00b7c3;
     --border-cyanCyan:#8378de;
-    --border-cyanBlue:#5c2e91;
+    --border-cyanBlue:#0078d4;
     --border-magenta: #e3008c;
     --border-blueMagenta:#8378de;
     --border-blueMagentaMagenta:#c239b3;
@@ -81,7 +81,7 @@
     --general-size: 0.9em;
     --title-size:1.3em;
     --title-card-size:0.8em;
-    --description-size: 0.6em;
+    --description-size: 0.7em;
     --information-size: 1.8em;
     --warning-size: 1.9em;
 
@@ -103,6 +103,8 @@
     --padding-bottom:0px;
 
     /* Card's */
+    --card-special-small-height: 105px;
+
     --card-very-very-small-width: 95px;
     --card-very-very-small-height: 90px;
 

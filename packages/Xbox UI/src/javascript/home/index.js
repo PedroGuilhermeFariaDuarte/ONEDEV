@@ -14,8 +14,8 @@ function getHistoryGames(profileData) {
     const listOfCards = document.querySelector(".list_card")
 
     const lastestGames = () => {
-        profileData?.history?.lastest_games.forEach(item => {
-            listOfCards.innerHTML += `<div class="card_very_small" id="item1" onmouseover="handlerSetCardTheme(event)">
+        profileData?.history?.lastest_games.forEach((item, index) => {
+            listOfCards.innerHTML += `<div class="card_very_small element_focus" id="item${index}" onmouseover="debounce(handlerSetThemeDetails,event)">
          <div class="card_content" style="background-image:url('${item?.small_background}')">
          </div>
         </div>`
@@ -23,7 +23,7 @@ function getHistoryGames(profileData) {
     }
 
     const lasteGame = () => {
-        listOfCards.innerHTML += `<div class="card" id="item0" onmouseover="handlerSetCardTheme(event)">
+        listOfCards.innerHTML += `<div class="card" id="card0" onmouseover="debounce(handlerSetThemeDetails,event)">
                                 <div class="card_content" style="background-image:url('${profileData?.history?.last_game?.background}')">
                                 </div>
                             </div>`
