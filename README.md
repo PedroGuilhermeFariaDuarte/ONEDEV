@@ -7,7 +7,7 @@ Seja bem-vindo ao monorepo da **ONEDEV**, aqui você irá encontrar desafios, pr
 
 ### Sobre o monorepo
 
-Este repositório foi criado com base no conceito de [Monorepo](https://www.youtube.com/watch?v=k5TkBcUTJus) onde um unico reposiório é usado para as aplicações front-end e back-end com ambas fazendo o uso, no nosso caso, da pasta **node_modules**, facilitando e muito o gerenciamento das aplicações e suas dependências.
+Este repositório foi criado com base no conceito de [Monorepo](https://www.youtube.com/watch?v=k5TkBcUTJus) onde um unico repositório é usado para as aplicações front-end e back-end com ambas fazendo o uso, no nosso caso, da pasta **node_modules**, facilitando e muito o gerenciamento das aplicações e suas dependências.
 
 #### Packages
 
