@@ -108,3 +108,6 @@ dist
 *.lock
 *.error
 *.*.log
+
+#NPM
+*-lock.json
