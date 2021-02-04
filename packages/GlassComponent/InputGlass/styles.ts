@@ -35,6 +35,7 @@ export const Button = styled.button<StyledButton>`
     width:100%;
     height: 100%;
     background-color: ${props => props.buttonColor && props.buttonColor !== '' ? props.buttonColor : '#4F3AA7'};
+    cursor: pointer;
 
     font-family: "'Lato Hairline', Lato",sans-serif;
     font-weight:600;
@@ -47,24 +48,3 @@ export const Button = styled.button<StyledButton>`
     justify-content: center;
     align-items: center;
 `
-
-// export const Content = styled.div`
-//     width: 100%;
-//     height: 300px;
-//     margin:auto;
-//     margin-top: 150px;
-//     position: relative;
-//     margin-bottom: 20px;
-
-//     display: flex;
-//     flex-flow: row nowrap;
-//     justify-content: center;
-//     align-items: center;
-
-//    img.background {
-//         width: 450px;
-//         height: 450px;
-//         position: absolute;
-//         right:150px;
-//     }
-// `

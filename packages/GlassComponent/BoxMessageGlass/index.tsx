@@ -2,19 +2,24 @@
 import React from "react"
 
 // Types
-import { IInputGlass } from "../types"
+import { IBoxMessageGlass } from "../types"
 
 // Coponents
 import Container from "../components/Container"
 
 // Styles
-import { Section, Input, Button } from "./styles"
+import {
+    Section, Button, BoxContainer, BoxHeader,
+    BoxContent
+} from "./styles"
 
-const InputGlass: React.FC<IInputGlass> = ({
-    inputPlaceholder,
-    inputPlaceholderColor,
-    buttonName,
-    buttonColor,
+const BoxMessageGlass: React.FC<IBoxMessageGlass> = ({
+    boxMessageTitle,
+    boxMessageContent,
+    boxMessageCallBack,
+    boxMessageButtonText,
+    boxMessageButtonColor,
+    boxMessageButtonTextColor,
     cardWidth,
     cardHeight,
     cardRadius,
@@ -41,17 +46,25 @@ const InputGlass: React.FC<IInputGlass> = ({
         cardPaddingBottom={cardPaddingBottom}
     >
         <Section>
-            <Input
-                placeholder={inputPlaceholder}
-                inputPlaceholderColor={inputPlaceholderColor}
-                {...rest} />
+            <BoxContainer>
+                <BoxHeader>
+                    <span>{boxMessageTitle}</span>
+                </BoxHeader>
+                <BoxContent>
+                    <span>{boxMessageContent}</span>
+                </BoxContent>
+            </BoxContainer>
         </Section>
         <Section>
-            <Button buttonColor={buttonColor}>
-                {buttonName}
+            <Button
+                boxMessageButtonColor={boxMessageButtonColor}
+                boxMessageButtonTextColor={boxMessageButtonTextColor}
+                onClick={() => boxMessageCallBack && boxMessageCallBack()}
+            >
+                {boxMessageButtonText || 'button'}
             </Button>
         </Section>
     </Container>
 )
 
-export default InputGlass
+export default BoxMessageGlass
