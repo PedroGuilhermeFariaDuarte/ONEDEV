@@ -2,7 +2,7 @@
 import React from "react"
 
 // Types
-import ICreditCard from "../types"
+import { ICreditCard } from "../types"
 
 // Coponents
 import Container from "../components/Container"
@@ -26,6 +26,11 @@ const CreditCard: React.FC<ICreditCard> = ({ cardTitle,
     cardRadius,
     cardBackground,
     cardGlass, cardColorBorder,
+    cardPaddingAll,
+    cardPaddingLeft,
+    cardPaddingRight,
+    cardPaddingTop,
+    cardPaddingBottom,
     children, ...rest }) => (
     <Container
         cardWidth={cardWidth}
@@ -34,6 +39,11 @@ const CreditCard: React.FC<ICreditCard> = ({ cardTitle,
         cardGlass={cardGlass}
         cardBackground={cardBackground}
         cardColorBorder={cardColorBorder}
+        cardPaddingAll={cardPaddingAll}
+        cardPaddingLeft={cardPaddingLeft}
+        cardPaddingRight={cardPaddingRight}
+        cardPaddingTop={cardPaddingTop}
+        cardPaddingBottom={cardPaddingBottom}
     >
         <Section>
             <CardHeader>

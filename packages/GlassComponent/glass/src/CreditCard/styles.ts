@@ -86,25 +86,3 @@ export const CardDateValid = styled.div`
     align-items: flex-end;
 
 `
-
-export const Content = styled.div`
-    width: 100%;
-    height: 300px;
-    margin:auto;
-    margin-top: 150px;
-    position: relative;
-    margin-bottom: 20px;
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-
-   img.background {
-        width: 450px;
-        height: 450px;
-        position: absolute;
-        right:150px;
-    }
-`
-

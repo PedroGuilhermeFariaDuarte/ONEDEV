@@ -2,16 +2,13 @@
 import React from "react"
 
 // Types
-import IInputGlass from "../types"
+import { IInputGlass } from "../types"
 
 // Coponents
 import Container from "../components/Container"
 
 // Styles
-import { Content, Section, Input, Button } from "./styles"
-
-// Assets
-import Image from "../assets/object.png"
+import { Section, Input, Button } from "./styles"
 
 const InputGlass: React.FC<IInputGlass> = ({
     inputPlaceholder,
@@ -23,30 +20,38 @@ const InputGlass: React.FC<IInputGlass> = ({
     cardRadius,
     cardBackground,
     cardGlass, cardColorBorder,
+    cardPaddingAll,
+    cardPaddingLeft,
+    cardPaddingRight,
+    cardPaddingTop,
+    cardPaddingBottom,
     children, ...rest }) => (
-    <Content>
-        <Container
-            cardWidth={cardWidth}
-            cardHeight={cardHeight}
-            cardRadius={cardRadius}
-            cardGlass={cardGlass}
-            cardBackground={cardBackground}
-            cardColorBorder={cardColorBorder}
-        >
-            <Section>
-                <Input
-                    placeholder={inputPlaceholder}
-                    inputPlaceholderColor={inputPlaceholderColor}
-                    {...rest} />
-            </Section>
-            <Section>
-                <Button buttonColor={buttonColor}>
-                    {buttonName}
-                </Button>
-            </Section>
-        </Container>
-        <img src={Image} className="background" alt="Teste" />
-    </Content>
+
+    <Container
+        cardWidth={cardWidth}
+        cardHeight={cardHeight}
+        cardRadius={cardRadius}
+        cardGlass={cardGlass}
+        cardBackground={cardBackground}
+        cardColorBorder={cardColorBorder}
+        cardPaddingAll={cardPaddingAll}
+        cardPaddingLeft={cardPaddingLeft}
+        cardPaddingRight={cardPaddingRight}
+        cardPaddingTop={cardPaddingTop}
+        cardPaddingBottom={cardPaddingBottom}
+    >
+        <Section>
+            <Input
+                placeholder={inputPlaceholder}
+                inputPlaceholderColor={inputPlaceholderColor}
+                {...rest} />
+        </Section>
+        <Section>
+            <Button buttonColor={buttonColor}>
+                {buttonName}
+            </Button>
+        </Section>
+    </Container>
 )
 
 export default InputGlass
