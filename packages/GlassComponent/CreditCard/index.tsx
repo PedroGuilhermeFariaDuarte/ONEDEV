@@ -31,6 +31,7 @@ const CreditCard: React.FC<ICreditCard> = ({ cardTitle,
     cardPaddingRight,
     cardPaddingTop,
     cardPaddingBottom,
+    cardChipImage,
     children, ...rest }) => (
     <Container
         cardWidth={cardWidth}
@@ -50,7 +51,7 @@ const CreditCard: React.FC<ICreditCard> = ({ cardTitle,
                 <TitleCard>{cardTitle}</TitleCard>
             </CardHeader>
             <CardChip>
-                <img src={Chip} alt="Teste" />
+                <img src={cardChipImage && cardChipImage.trim() !== '' ? cardChipImage : Chip} alt="Chip image" />
             </CardChip>
             <CardNumber>
                 <span>
