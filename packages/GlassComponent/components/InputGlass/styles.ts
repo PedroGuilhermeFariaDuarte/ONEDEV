@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 // Types
-import { StyledButton, StyledInput } from "../types"
+import { StyledButton, StyledInput } from "../../types"
 
 export const Section = styled.div`
     width: 100%;

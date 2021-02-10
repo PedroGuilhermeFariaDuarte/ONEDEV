@@ -2,7 +2,7 @@ import React from "react"
 import { render } from "@testing-library/react"
 
 // Components
-import Creditcard from "../Creditcard"
+import Creditcard from "../components/Creditcard"
 
 // @ts-ignore
 test('should render the InputGlass component', () => {

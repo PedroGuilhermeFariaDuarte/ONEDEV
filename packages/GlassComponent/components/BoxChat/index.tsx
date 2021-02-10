@@ -2,10 +2,10 @@
 import React from "react"
 
 // Types
-import { IBoxChatGlass } from "../types"
+import { IBoxChatGlass } from "../../types"
 
 // Coponents
-import Container from "../components/Container"
+import Container from "../Container"
 
 // Styles
 import {

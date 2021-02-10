@@ -1,39 +1,21 @@
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 // Types
-import { StyledButton, StyledBoxChat } from "../types"
+import { StyledButton } from "../../types"
 
 export const Section = styled.div`
     width: 100%;
-    min-height: 100%;
-    height: auto;
-    & + & {
-        position: relative;
-    }
+    height: 100%;
+    position: relative;
 
     display: flex;
     flex-flow: column;
 `
 
-export const BoxContainer = styled.div<StyledBoxChat>`
+export const BoxContainer = styled.div`
     width: 100%;
-    height: auto;
-    ${props => (props.boxChatOnMe && props.boxChatOnMe === true)
-        &&
-        css`
-            &::after {
-                content: "";
-                /* width: 20px;
-                height: 20px; */
-                /* border-radius: 50%; */
-                position: absolute;
-                background: none;
-                right: 0px;
-                bottom: 0px;
-            }
-        `
-    }
-
+    height: 100%;
+    /* border:1px solid red; */
 
     display: flex;
     flex-flow: column;
@@ -41,7 +23,7 @@ export const BoxContainer = styled.div<StyledBoxChat>`
 
 export const BoxHeader = styled.div`
     width: 100%;
-    height: auto;
+    height: 20px;
     /* border:1px solid blue; */
 
     span {
