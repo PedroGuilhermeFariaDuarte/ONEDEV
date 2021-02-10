@@ -1,0 +1,66 @@
+# Node
+node_modules
+/node_modules/
+node_modules/**/*
+**/*/node_modules
+
+# Assets
+*.assets
+/assets/
+assets/**/*
+assets
+
+# Dist
+dist/
+dist
+dist/**/*
+
+# Components
+components/
+components
+components/**/*
+
+InputGlass/
+CreditCard/
+BoxMessageGlass/
+BoxChatGlass/
+
+InputGlass
+CreditCard
+BoxMessageGlass
+BoxChatGlass
+
+InputGlass/**/*
+CreditCard/**/*
+BoxMessageGlass/**/*
+BoxChatGlass/**/*
+
+# Config
+webpack.config.js
+webpack.config.*
+webpack.*.*
+*.webpack
+
+tsconfig.js
+tsconfig.json
+tsconfig.*
+*.tsconfig
+
+.babelrc
+.babelrc.*
+babelrc.*.*
+*.babelrc
+
+# Test
+setupTests.*
+setupTests.ts
+*.setupTests
+react-app-env.d
+react-app-env.*
+react-*.*
+*.react-app-env
+
+# Types
+types.ts
+types.*
+types/**/*

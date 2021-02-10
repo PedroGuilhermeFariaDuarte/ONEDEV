@@ -52,6 +52,7 @@ export interface ICreditCard extends PropsWithChildren<IPropContainer> {
     cardNumber?: number,
     cardNamePersonal?: string,
     cardDateValid?: string,
+    cardChipImage?: any
 }
 
 export interface IInputGlass extends PropsWithChildren<IPropContainer> {
