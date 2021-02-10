@@ -20,21 +20,6 @@ components/
 components
 components/**/*
 
-InputGlass/
-CreditCard/
-BoxMessageGlass/
-BoxChatGlass/
-
-InputGlass
-CreditCard
-BoxMessageGlass
-BoxChatGlass
-
-InputGlass/**/*
-CreditCard/**/*
-BoxMessageGlass/**/*
-BoxChatGlass/**/*
-
 # Config
 webpack.config.js
 webpack.config.*
@@ -59,6 +44,8 @@ react-app-env.d
 react-app-env.*
 react-*.*
 *.react-app-env
+src/index.*
+src/index.test.*
 
 # Types
 types.ts

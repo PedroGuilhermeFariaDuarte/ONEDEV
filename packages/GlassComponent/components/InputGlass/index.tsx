@@ -2,10 +2,10 @@
 import React from "react"
 
 // Types
-import { IInputGlass } from "../types"
+import { IInputGlass } from "../../types"
 
 // Coponents
-import Container from "../components/Container"
+import Container from "../Container"
 
 // Styles
 import { Section, Input, Button } from "./styles"
@@ -15,6 +15,7 @@ const InputGlass: React.FC<IInputGlass> = ({
     inputPlaceholderColor,
     buttonName,
     buttonColor,
+    buttonCallBack,
     cardWidth,
     cardHeight,
     cardRadius,
@@ -42,13 +43,16 @@ const InputGlass: React.FC<IInputGlass> = ({
     >
         <Section>
             <Input
-                placeholder={inputPlaceholder}
-                inputPlaceholderColor={inputPlaceholderColor}
+                placeholder={inputPlaceholder || 'your text here'}
+                inputPlaceholderColor={inputPlaceholderColor || '#000'}
                 {...rest} />
         </Section>
         <Section>
-            <Button buttonColor={buttonColor}>
-                {buttonName}
+            <Button
+                buttonColor={buttonColor}
+                onClick={() => buttonCallBack()}
+            >
+                {buttonName || 'done'}
             </Button>
         </Section>
     </Container>

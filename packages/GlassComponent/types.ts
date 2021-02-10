@@ -59,7 +59,8 @@ export interface IInputGlass extends PropsWithChildren<IPropContainer> {
     inputPlaceholder?: string,
     inputPlaceholderColor?: string,
     buttonName?: string
-    buttonColor?: string
+    buttonColor?: string,
+    buttonCallBack?: Function
 }
 
 export interface IBoxMessageGlass extends PropsWithChildren<IPropContainer> {

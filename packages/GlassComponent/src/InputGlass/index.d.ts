@@ -14,8 +14,6 @@ interface IPropContainer {
     cardPaddingBottom?: number,
 }
 
-
-
 interface PropsInput {
     inputPlaceholderColor?: string,
 }
@@ -25,6 +23,7 @@ export interface IInputGlass extends PropsWithChildren<IPropContainer> {
     inputPlaceholderColor?: string,
     buttonName?: string
     buttonColor?: string
+    buttonCallBack?: Function
 }
 
 declare const InputGlass: ComponentType<IInputGlass>

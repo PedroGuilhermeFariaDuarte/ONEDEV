@@ -2,7 +2,7 @@ const path = require("path")
 
 module.exports = {
     mode: "production",
-    entry: path.resolve(__dirname, "CreditCard", "index.tsx"),
+    entry: path.resolve(__dirname, "components", "InputGlass", "index.tsx"),
     module: {
         rules: [
             {
@@ -40,7 +40,7 @@ module.exports = {
     },
     output: {
         filename: "index.js",
-        path: path.resolve(__dirname, 'src', 'CreditCardGlass'),
+        path: path.resolve(__dirname, 'src', 'InputGlass'),
         libraryTarget: 'commonjs2'
     }
 }
