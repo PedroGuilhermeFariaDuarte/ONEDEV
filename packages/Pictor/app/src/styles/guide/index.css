@@ -1,0 +1,121 @@
+:root{
+    /* Background */
+    --primary-background:#FFF;
+    --secondary-backgorubd:#EDF0F4;
+    --therd-background:#3B3A39;
+    --fourth-background:#605E5C90;
+    --fifth-background:#EDEBE9;
+    --sixth-background:#F3F2F1;
+    --seventh-background:#FAF9F8;
+    --eighth-background:#B2B9C5;
+    --nineth-background:#16a77e;
+    --tenth-background:#27b48c;
+    --eleventh-background:#9ae2cd;
+
+    /* Background Glass*/
+    --primary-background-glass:#ffffff90;
+    --secondary-backgorund-glass:#EDF0F490;
+    --therd-background-glass:#3B3A3990;
+    --fourth-background-glass:#605E5C90;
+    --fifth-background-glass:#EDEBE990;
+    --sixth-background-glass:#F3F2F190;
+    --seventh-background-glass:#FAF9F890;
+    --eighth-background-glass:#B2B9C590;
+    --nineth-background-glass:#9ae2cd90;
+
+    /* Icons colors status */
+    --icon-status-away: #EDF0F4;
+    --icon-status-notDistub: #c50f1f;
+    --icon-status-online: #9ae2cd;
+    --icon-status-selected: #16a77e;
+    --icon-status-invisible: #EDF0F4;
+    --icon-status-general: #EDF0F4;
+    --icon-status-outOffice: #b4009e;
+
+    /* Icons Container background colors */
+    --icon-container-general: #FAF9F8;
+    --icon-container-selected: #9ae2cd;
+    --icon-container-selected-dark: #16a77e;
+
+    /* User status background colors */
+    --user-background-status-away: #ffaa44;
+    --user-background-status-notDistub: #c50f1f;
+    --user-background-status-online: #9ae2cd;
+    --user-background-status-invisible: #8a8886;
+    --user-background-status-outOffice: #b4009e;
+
+    /* User status text colors */
+    --user-text-status-away: #ffaa44;
+    --user-text-status-notDistub: #c50f1f;
+    --user-text-status-online: #16a77e;
+    --user-text-status-invisible: #8a8886;
+    --user-text-status-outOffice: #b4009e;
+
+    /* Border colors */
+    --border-whiteice:#EDEBE9;
+    --border-greyice:#e7e7e7;
+    --border-redOrange: #8e562e;
+    --border-orangeOrange: #ffaa44;
+    --border-orangeYellowYellow: #986f0b;
+    --border-yellowGreen: #498205;
+    --border-greenCyan: #00b7c3;
+    --border-cyanCyan:#8378de;
+    --border-cyanBlue:#0078d4;
+    --border-magenta: #e3008c;
+    --border-blueMagenta:#8378de;
+    --border-blueMagentaMagenta:#c239b3;
+    --border-magentaPink: #7a7574;
+    --border-grayGray: #a0aeb2;
+    --border-greyblue:#B2B9C5;
+
+    /*Border Radius*/
+    --border-all-radius-header: 10px;
+    --border-all-radius-button-general: 5px;
+
+    /* Text colors */
+
+    --text-general: #201F1E;
+
+    --text-title-greywhite:#FAF9F8;
+    --text-title-greyblack: #201F1E;
+
+    --text-label-greywhite:#FAF9F8;
+    --text-label-greyblack: #201F1E;
+    --text-label-blackmidnight: #3C444B;
+
+    --text-description-greywhite:#FAF9F8;
+    --text-description-greyblack: #201F1E;
+    --text-description-blackmidnight: #3C444B;
+    --text-description-greenmorning: #16a77e;
+    --text-description-bluegray: #EDF0F4;
+
+
+
+    --text-last-message-greywhite:#FAF9F8;
+    --text-last-message-greyblack: #201F1E;
+
+    /* Font */
+    --font-general: "Segoe UI Semibold","Roboto",sans-serif;
+    --font-description: "Segoe UI Light","Roboto",sans-serif;
+    --font-information: "Segoe UI","Roboto",sans-serif;
+    --font-warning: "Segoe UI Semibold","Roboto",sans-serif;
+
+    /* Font Size */
+    --font-general-size: 18px;
+    --font-title-size:1.3em;
+    --font-title-logo-size:2.5em;
+    --font-title-card-size:0.8em;
+    --font-title-button-size:1.0em;
+    --font-title-button-min-size:0.7em;
+    --font-description-size: 0.7em;
+    --font-description-card--min-size: 0.5em;
+    --font-description-chat-name-size: 0.7em;
+    --font-description-chat-location-size: 0.5em;
+    --font-information-size: 1.8em;
+    --font-warning-size: 1.9em;
+    --font-svg-size: 1.2em;
+    --font-svg-size-min: 0.8em;
+    --font-text-placeholder-size:0.8em;
+
+}
+

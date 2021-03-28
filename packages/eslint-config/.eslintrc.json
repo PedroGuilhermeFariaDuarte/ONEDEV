@@ -17,9 +17,7 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "standard",
-        "prettier/react",
-        "prettier"
+        "standard"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -35,8 +33,21 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "prettier/prettier": "error",
-        // "react/no-array-index-key": "off",
+        "quotes": [
+            "warn",
+            "single",
+            {
+                "avoidEscape": true,
+                "allowTemplateLiterals": true
+            }
+        ],
+        "jsx-quotes": [
+            "warn",
+            "prefer-single"
+        ],
+        "react/display-name": [
+            0
+        ],
         "computed-property-spacing": [
             "warn",
             "always"
@@ -143,7 +154,36 @@
         "no-console": "off",
         "no-alert": "off",
         "no-restricted-globals": [
-            "blur"
-        ]
+            1
+        ],
+        "import/no-anonymous-default-export": [
+            "warn",
+            {
+                "allowArray": true,
+                "allowArrowFunction": true,
+                "allowAnonymousClass": true,
+                "allowAnonymousFunction": true,
+                "allowCallExpression": true,
+                "allowLiteral": true,
+                "allowObject": true
+            }
+        ],
+        "no-tabs": [
+            "warn",
+            {
+                "allowIndentationTabs": true
+            }
+        ],
+        "space-before-function-paren": [
+            "off",
+            "always"
+        ],
+        "no-multiple-empty-lines": [
+            "off"
+        ],
+        "node/no-callback-literal": [
+            "off"
+        ],
+        "no-undef": "off"
     }
 }

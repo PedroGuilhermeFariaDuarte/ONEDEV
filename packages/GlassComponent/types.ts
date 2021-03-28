@@ -1,4 +1,4 @@
-import { PropsWithChildren, } from "react"
+import { PropsWithChildren, TextareaHTMLAttributes, HTMLAttributes } from "react"
 import { StyledProps } from "styled-components"
 
 interface IPropContainer {
@@ -20,6 +20,12 @@ interface PropsButton {
     buttonColor?: string
     boxMessageButtonColor?: string
     boxMessageButtonTextColor?: string
+    inputMessageButtonColorBackground?: string,
+    inputMessageButtonColor?: string,
+}
+
+interface PropsImage {
+    contactImage?: string
 }
 
 interface PropsInput {
@@ -36,6 +42,13 @@ export interface CardContainer extends StyledProps<IPropContainer> {
 
 export interface StyledButton extends StyledProps<PropsButton> {
 }
+
+export interface StyledTextArea extends TextareaHTMLAttributes<HTMLAttributes<any>> {
+    inputMessagePlaceholderColor?: string,
+    inputMessageTextContentColor?: string
+}
+
+export interface StyledImage extends StyledProps<PropsImage> { }
 
 export interface StyledInput extends StyledProps<PropsInput> {
 }
@@ -78,3 +91,26 @@ export interface IBoxChatGlass extends PropsWithChildren<IPropContainer> {
     boxChatOnMe: boolean
 }
 
+export interface IInputMessageGlass extends PropsWithChildren<IPropContainer> {
+    inputMessagePlaceholder?: string,
+    inputMessageMaxChar?: number,
+    inputMessageEmoji?: boolean
+    inputMessageButtonColorBackground?: string,
+    inputMessageButtonColor?: string,
+    inputMessageButtomFile?: boolean,
+    inputMessagePlaceholderColor?: string,
+    inputMessageTextContentColor?: string,
+
+    inputMessageSend: FunctionStringCallback,
+    inputMessageFile?: Function | undefined,
+}
+
+export interface IContactGlass extends PropsWithChildren<IPropContainer> {
+    contactName: string,
+    contactImage: string | any,
+    contactLastMessage: string,
+    contactDateMessage: string,
+    contactIsOnline: boolean,
+    contactReadMessage: boolean,
+    contactNumberOfMessage: number
+}

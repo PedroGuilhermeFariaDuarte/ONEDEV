@@ -1,0 +1,16 @@
+List of BUG's
+
+Type  |  Level
+  Re-renderização:
+    Sub-Component: Chat
+    Description: Setando duas vezes um event listener
+    resolve: true
+
+  Estrutura de Dados:
+    Sub-Component: Chat
+    Description: Não está comparando os valores corretamente no recebimento do evento de chatting
+    resolve: true
+
+    Sub-Component: Chat
+    Description: Recebendo uma estrutura de dado diferente da enviada
+    resolve: true
