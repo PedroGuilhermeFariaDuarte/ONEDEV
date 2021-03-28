@@ -6,6 +6,11 @@
 # Welcome to Glasscomponentss
 <img src="https://github.com/PedroGuilhermeFariaDuarte/ONEDEV/blob/main/examples/glass.png" width="650" height="300"/>
 
+
+## What's new
+
+In this new version **1.1.8**, we have two news components :D, are **InputMessageGlass** and **ContactGlass**, see more below.
+
 ## Getting started
 
 Hello devs!
@@ -85,6 +90,8 @@ Have following components in the actual version 1.1.0
 2. **Box Message**
 3. **Credit Card**
 4. **Box Chat Message**
+5. **InputMessageGlass** (New)
+6. **ContactGlass** (New)
 
 **InputGlass component**
 
@@ -126,8 +133,6 @@ This component has the following properties
 
 This component has the following properties
 
-- **cardChipImage** : The chip image of credit card (**string | Data URI | Bin |any**)
-
 |Name |Description |Type
 |-----|------------|----|
 |**cardTitle**|The name of operator credit car, for example: Nubank and Visa|**string**|
@@ -136,6 +141,46 @@ This component has the following properties
 |**cardDateValid**|The valid date of credit card|**string**|
 |**cardChipImage**|The chip image of credit card|**string** \ **Data URI**|
 ||
+
+**InputMessageGlass**
+
+This component has some particularities, you are obliged send a function as callback for the properties **inputMessageSend** with **inputMessageSend** and **inputMessageFile** receiving a callback.
+
+The inputMessageFile receive a callback and this callback should receive a string data as parameter, this parameter is the content of user in input.
+
+The inputMessageSend receive a callback and this callback should receive a [FileList](https://developer.mozilla.org/en-US/docs/Web/API/FileList) data as parameter, this parameter is the content selected by user in yours files system and this component for default accepted file of type image/png, jpg and gif, and multiples selection.
+
+|Name |Description |Type
+|-----|------------|----|
+|**inputMessagePlaceholderColor**|The color of text of description|**string**|
+|**inputMessageTextContentColor**|The color of text inside of input|**string**|
+|**inputMessagePlaceholder**|The description of input|**string**|
+**inputMessageMaxChar**|The number max of characters|**number**|
+|**inputMessageEmoji**|If should show a display of emojis (**alpha**)|**boolean**|
+**inputMessageButtonColorBackground**|The background color of button to send a message|**string**|
+|**inputMessageButtonColor**|The color of text/icon inside of button|**string**|
+|**inputMessageButtomFile**|If should show a button for user selected some files in your file system|**boolean**|
+|**inputMessageSend**|Your callback for get the message of user's|**Funcition**|
+|**inputMessageFile**|Your callback for get a array of files|**Function**|
+<br>
+<br>
+
+**ContactGlass**
+
+This component has some particularities, like a previous component, your dont are obliged send all propertie, the **contactNumberOfMessage**, this propertie only should send when the **contactReadMessage** is set for *true*.
+
+|Name |Description |Type
+|-----|------------|----|
+|**contactName**|The name of contact|**string**|
+**contactImage**|The image of contact|**string**|
+|**contactLastMessage**|The last message for show|**string**|
+**contactDateMessage**|The date of send of message|**string**|
+|**contactIsOnline**|For show a visual state for the user online|**boolean**|
+|**contactReadMessage**|If should show the number of messages send case the message dont was read|**boolean**|
+**contactNumberOfMessage**|Number of message receive|**number**
+||
+<br>
+<br>
 
 # Contribute
 
